@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md white-bg">
+      <div class="container">
+        <div
+          class="navbar-brand d-flex align-items-center column-gap-3 w-50 pt-4 pb-4 p-md-2"
+        >
+          <span
+            class="rounded-5 d-flex justify-content-center align-items-center"
+            ><i
+              class="fa-solid fa-utensils"
+              style="color: rgb(255, 255, 255)"
+            ></i
+          ></span>
+          <div class="nav-txt">
+            <h1 class="fw-bold m-0">What's For Dinner</h1>
+            <p class="main-p-color m-0 small-span">
+              Your daily meal inspiration
+            </p>
+          </div>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-md-end"
+          id="navbarNavDropdown"
+        >
+          <ul
+            class="navbar-nav d-flex justify-content-between align-items-md-center gap-4 pt-4 pt-md-0"
+          >
+            <li class="nav-item">
+              <i class="fa-solid fa-bookmark"></i>
+              <span class="main-p-color d-md-none">Saved Recipes</span>
+            </li>
+            <li class="nav-item">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+              <span class="main-p-color d-md-none">Recent</span>
+            </li>
+            <li class="nav-item">
+              <i class="fa-solid fa-gear"></i>
+              <span class="main-p-color d-md-none">Settings</span>
+            </li>
+            <li class="nav-item d-flex align-items-center column-gap-2">
+              <div class="man-img man-img">
+                <img
+                  src="./images/imageye___-_imgi_1_avatar-4.jpg"
+                  class="w-100 rounded-5"
+                  alt=""
+                />
+              </div>
+              <span class="main-p-color d-md-none">Profile</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="sec" class="sec main-bg">
+      <div class="container">
+        <div class="sec-wrapper d-flex flex-column flex-lg-row h-100 bg-white">
+          <div class="food-img position-relative" id="food-img"></div>
+          <div class="food-info">
+            <div class="degree d-flex column-gap-3" id="difficulty"></div>
+            <div
+              class="food-desc d-flex align-items-start justify-content-between pt-3"
+            >
+              <div class="name" id="name"></div>
+              <div class="options d-flex column-gap-2">
+                <span class="">
+                  <i class="fa-solid fa-bookmark" style="color: #f54900"></i
+                ></span>
+                <span class=""
+                  ><i
+                    class="fa-solid fa-share-nodes rounded-5"
+                    style="color: #f54900"
+                  ></i
+                ></span>
+              </div>
+            </div>
+            <div
+              class="alert d-flex flex-column row-gap-3 p-0"
+              id="alert"
+            ></div>
+            <div class="tabs d-flex justify-content-evenly border-bottom pb-4">
+              <button class="active" onclick="showIngredients()" id="ingred">
+                <i class="fa-solid fa-list-check"></i>
+                <span>Ingredients</span>
+              </button>
+              <button class="normal" id="inst" onclick="showInstructions()">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Instructions</span>
+              </button>
+              <button class="normal" id="nutr" onclick="showNutrition()">
+                <i class="fa-solid fa-chart-pie"></i>
+                <span>Nutrition</span>
+              </button>
+              <button class="normal" id="tips" onclick="showTips()">
+                <i class="fa-solid fa-lightbulb"></i>
+                <span>Chef's Tips</span>
+              </button>
+            </div>
+            <div class="steps mt-4 mb-5" id="steps">
+              <!-- <div class="nutrition">
+                <div class="row g-3" id="n-row">
+                  <div class="col-12 col-md-6">
+                    <div
+                      class="col-info cols-color d-flex justify-content-between align-items-center p-4 rounded-4"
+                    >
+                      <div
+                        class="nutrition-type d-felx justify-content-between align-items-center w-50"
+                      >
+                        <span class="main-light-orange-bg rounded-3 fw-bold"
+                          ><i
+                            class="fa-solid fa-fire"
+                            style="color: #f54900"
+                          ></i
+                        ></span>
+                        <span class="main-p-color fw-medium">Calories</span>
+                      </div>
+                      <div class="nutrition-num fw-bold fs-5">350kcal</div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+            <div class="try-button border-top pt-4 pb-4">
+              <button class="try" id="try" onclick="nextRecipie()">
+                <i
+                  class="fa-solid fa-arrows-rotate"
+                  style="color: rgb(255, 255, 255)"
+                ></i>
+                <span class="fw-semibold">Try Another Recipe</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./JS/index.js"></script>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

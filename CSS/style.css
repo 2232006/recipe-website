@@ -1,0 +1,361 @@
+html {
+  font-size: 12px;
+  h1 {
+    font-size: 18px;
+  }
+}
+
+:root {
+  --main-orange-color: #f54900;
+  --mian-light-orange: #ff6900;
+  --main-p-color: #606468;
+  --tabs-color: #6a7282;
+  --tabs-hover: #364153;
+  --main-bg: #fff9ec;
+  --icon-bg: #ffedd4;
+  --icon-bg-hover: #ffd7a8;
+  --easy-color: #008236;
+  --easy-bg: #dbfce7;
+  --type-bg: #dbeafe;
+  --cols-color: #fbf9fa;
+  --type-color: #1d4ee7;
+  --red-600: #e7000b;
+  --red-800: #9f0712;
+  --fire-color: #f54a00;
+  --fire-bg: #ffedd4;
+  --bar-bg: #dbeafe;
+  --dummb-bg: #2b7fff;
+  --carb-bg: #ffedd4;
+  --wheat-color: #d08700;
+  --fat-bg: #fef2f2;
+  --fat-color: #e7000b;
+  --fiber-bg: #dcfce7;
+  --fiber-color: #00a63e;
+  --sod-bg: #fce7f3;
+  --sod-color: #e60076;
+  --space: 0.25rem;
+  --text: 0.25rem;
+}
+.main-orange-color-bg {
+  background-color: var(--main-orange-color);
+}
+.main-orange-color {
+  color: var(--main-orange-color);
+}
+.mian-light-orange {
+  color: var(--mian-light-orange);
+}
+.main-p-color {
+  color: var(--main-p-color);
+}
+.main-bg {
+  background-color: var(--main-bg);
+}
+.icon-bg {
+  background-color: var(--icon-bg);
+}
+.easy-color {
+  color: var(--easy-color);
+}
+.easy-bg {
+  background-color: var(--easy-bg);
+}
+.type-bg {
+  background-color: #dbeafe;
+}
+.main-light-orange-bg {
+  background-color: var(--mian-light-orange);
+}
+.type-color {
+  color: var(--type-color);
+}
+.cols-color {
+  background-color: var(--cols-color);
+}
+.red-600 {
+  color: var(--red-600);
+}
+.red-800 {
+  color: var(--red-800);
+}
+.navbar-brand {
+  span {
+    min-width: calc(var(--text) * 12);
+    min-height: calc(var(--text) * 12);
+    background: linear-gradient(135deg, #ff6900 0%, #fb2c36 100%);
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.1);
+  }
+}
+.navbar-toggler {
+  --bs-border-width: 0;
+  --bs-navbar-toggler-focus-width: 0;
+}
+.navbar-collapse {
+  border-top: 1px solid #ffedd4;
+  width: 100%;
+}
+.nav-item {
+  i {
+    color: #4a5565;
+    font-size: 20px;
+  }
+  span {
+    font-size: 16px;
+  }
+}
+.nav-item:hover {
+  span,
+  i {
+    color: var(--main-orange-color);
+  }
+
+  cursor: pointer;
+}
+.small-span {
+  font-size: calc(var(--text) * 3.5);
+}
+.tiny-span {
+  font-size: calc(var(--text) * 3);
+}
+.icons-hover {
+  color: #364153;
+}
+.icon-color {
+  color: #4a5565;
+}
+.icons {
+  i {
+    font-size: calc(var(--text) * 4.5);
+  }
+  width: 180px;
+}
+.man-img {
+  width: calc(var(--text) * 10);
+  height: calc(var(--text) * 10);
+
+  img {
+    border: 2px solid var(--mian-light-orange);
+  }
+}
+.sec-wrapper {
+  min-height: 600px;
+  border-radius: calc(var(--space) * 6);
+  box-shadow: 0px 15px 20px rgb(0, 0, 0, 0.2);
+  padding-right: 2px;
+  overflow: hidden;
+}
+.food-img {
+  width: 100%;
+  img {
+    max-height: 350px;
+    object-fit: cover;
+    border-top-left-radius: calc(var(--space) * 6);
+    border-top-right-radius: calc(var(--space) * 6);
+  }
+}
+.navbar {
+  border-bottom: 2px solid var(--main-bg);
+  box-shadow: 0px 0px 3px rgb(0, 0, 0, 0.3);
+}
+.container {
+  padding-right: 2rem;
+
+  padding-left: 2rem;
+}
+.sec {
+  padding-block: 30px 60px;
+}
+.review {
+  top: 25px;
+  left: 25px;
+}
+.recipe-time {
+  i {
+    font-size: calc(var(--text) * 6);
+  }
+  bottom: 25px;
+  left: 25px;
+  right: 25px;
+  padding-block: calc(var(--space) * 6.25);
+}
+.food-info {
+  width: 100%;
+  padding: calc(var(--space) * 9);
+}
+.name {
+  h2 {
+    font-size: calc(var(--text) * 9);
+  }
+  p {
+    font-size: calc(var(--text) * 4.5);
+  }
+}
+.degree {
+  span {
+    padding-inline: calc(var(--text) * 2.75);
+  }
+}
+.options {
+  span {
+    padding: calc(var(--text) * 3) calc(var(--text) * 3.5);
+    border-radius: 12px;
+    background-color: var(--icon-bg);
+    transition: 0.2s;
+  }
+}
+.options span:hover {
+  background-color: var(--icon-bg-hover);
+  cursor: pointer;
+}
+.tabs {
+  button {
+    transition: 0.4s;
+    background-color: transparent;
+    border: none;
+    font-size: calc(var(--text) * 4);
+    font-weight: 600;
+    padding: calc(var(--space) * 2) calc(var(--space) * 4);
+  }
+}
+.tabs button:hover {
+  color: var(--tabs-hover);
+}
+.ingredients-step {
+  .order {
+    width: calc(var(--text) * 6);
+    height: calc(var(--text) * 6);
+    color: white;
+  }
+}
+.instructions-step {
+  .order {
+    width: calc(var(--text) * 12);
+    height: calc(var(--text) * 12);
+    color: white;
+  }
+}
+.nutrition-type {
+  span {
+    padding: calc(var(--text) * 2) calc(var(--text) * 2);
+  }
+  width: 70%;
+}
+.Tips-step {
+  padding: calc(var(--space) * 5);
+  .order {
+    i {
+      font-size: calc(var(--text) * 2);
+    }
+    background-color: #e17100;
+    width: calc(var(--text) * 5);
+    height: calc(var(--text) * 5);
+  }
+  border-left: 4px solid #ffb900;
+}
+.alert-content {
+  border-left: 4px solid var(--red-600);
+}
+.food-info {
+  overflow-y: auto;
+}
+.food-info::-webkit-scrollbar {
+  width: 5px;
+}
+.food-info::-webkit-scrollbar-thumb {
+  background: #ffe8ca;
+  border-radius: 10px;
+}
+.food-info::-webkit-scrollbar-thumb:hover {
+  background: #905214;
+}
+.steps {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.steps::-webkit-scrollbar {
+  width: 5px;
+}
+.steps::-webkit-scrollbar-thumb {
+  background: #ffe8ca;
+  border-radius: 10px;
+}
+.steps::-webkit-scrollbar-thumb:hover {
+  background: #905214;
+}
+.try {
+  background: linear-gradient(to right, #ff6900 0%, #fb2c36 100%);
+  color: white;
+  font-size: 16px;
+  i {
+    font-size: 14px;
+  }
+  border: 0;
+  padding: calc(var(--space) * 3) calc(var(--space) * 6);
+  border-radius: 12px;
+  transition: 0.2s;
+}
+.try:hover {
+  transform: scale(1.06);
+  background: linear-gradient(to right, #f54a00 0%, #e7000b 100%);
+}
+.tabs .active {
+  color: #f54900;
+  border-bottom: 2px solid #f54900;
+}
+.tabs .normal {
+  color: var(--tabs-color);
+  border: none;
+}
+@media (min-width: 576px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1230px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-collapse {
+    border-top: none;
+    width: auto;
+  }
+  html {
+    h1 {
+      font-size: 24px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .food-img {
+    img {
+      min-height: 100%;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: calc(var(--space) * 6);
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .food-img {
+    width: 40%;
+  }
+  .food-info {
+    width: 60%;
+    height: 750px;
+  }
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1400px) {
+  html {
+    font-size: 16px;
+  }
+}
